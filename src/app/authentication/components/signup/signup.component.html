@@ -1,0 +1,35 @@
+<form class="form-wrapper">
+  <h1> &nbsp;</h1>
+  <div class="form-container">
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="First Name" formControlName="Firstname" required>
+      <mat-error *ngIf="!formGroup.controls['Firstname'].valid && formGroup.controls['Firstname'].touched">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="Last Name" formControlName="Lastname" required>
+      <mat-error *ngIf="!formGroup.controls['Lastname'].valid && formGroup.controls['Lastname'].touched">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="Email" formControlName="Email" required>
+      <mat-error *ngIf="!formGroup.controls['Email'].valid && formGroup.controls['Email'].touched">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="Bussiness Phone" formControlName="Phone" required>
+      <mat-error *ngIf="!formGroup.controls['Phone'].valid && formGroup.controls['Phone'].touched">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Country</mat-label>
+      <mat-select> 
+        <mat-option *ngFor="let country of country_list" [value]="country.code">
+          {{country.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field [formGroup]="formGroup">
+      <input matInput placeholder="Line of bussiness" formControlName="LOB" required>
+      <mat-error *ngIf="!formGroup.controls['LOB'].valid && formGroup.controls['LOB'].touched">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" class="btn-lg">Create account</button>
+  <p>Already have an account? <a [routerLink]="['/signin']">Signin here</a></p>
+</form>

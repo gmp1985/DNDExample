@@ -1,0 +1,21 @@
+<div class="ark-app-modalframe">
+  <div id="elementBox" class="ark-app-modal">
+    <div class="ark-app-modal-close-btn" (click)="_closeElementBox()"><i class="material-icons bg fa">clear</i></div>
+    <div class="ark-app-modal-innerDiv">
+      <div class="elements" *ngFor="let elementGroups of ElementGroups">        
+        <p>{{elementGroups | titlecase}}</p>
+        <div *ngFor="let elements of ElementGroupData[elementGroups]" class="modal-cnt-box">
+          <div>
+            <div class="icon-box" arkDraggable [id]="elements.elementId">
+              <i class="material-icons" *ngIf="elements.elementClass == null">{{elements.elementIcon}}</i>
+              <i class="elements.elementClass" *ngIf="elements.elementIcon == null"></i>              
+            </div>
+            <span class="icon-txt">{{elements.elementName | titlecase}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="help-txt"><span><i class="material-icons fa"> flare </i> Lorem Ipsum: Lorem ipsum is a pseudo Latin
+          text used in web design</span></div>
+    </div>
+  </div>
+</div>

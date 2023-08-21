@@ -1,0 +1,25 @@
+<div class="color-picker" #pickerContainer>
+  <div class="wheel-container" #wheelContainer>
+      <canvas
+              (click)="onWheelClick($event.offsetX, $event.offsetY)"
+              (mousemove)="onWheelDrag($event.offsetX, $event.offsetY)"
+              (mousedown)="isWheelDragging = true; $event.preventDefault();"
+              (window:mouseup)="isWheelDragging=false"
+              #canvas>
+      </canvas>
+  </div>
+  <div class="gradient-container">
+      <div class="value-picker"
+           (click)="onGradientChange($event.offsetX)"
+           (mousemove)="isGradientDragging?onGradientChange($event.offsetX):{};"
+           (mousedown)="isGradientDragging = true;$event.preventDefault();"
+           (window:mouseup)="isGradientDragging = false;"
+           #picker></div>
+      <div class="value-marker" draggable="false" #marker></div>
+  </div>
+  <div class="code-container">
+      <input type="text" [ngModel]="rgbText" (ngModelChange)="onRgbChange($event)">
+      <input type="text" [ngModel]="hexText" (ngModelChange)="onHexChange($event)">
+      <div class="sample" [ngStyle]="{'background-color':hexText}"></div>
+  </div>
+</div>

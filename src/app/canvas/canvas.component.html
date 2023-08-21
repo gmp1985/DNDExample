@@ -1,0 +1,16 @@
+<div (dblClick)="_removeQuickmenu()">
+<div class="rulerOverlay" *ngIf="overlay"></div>
+<ark-canvasheader></ark-canvasheader>
+<ark-ruler></ark-ruler>
+<ark-sidenav></ark-sidenav>
+<div class="arkApp_gridLayout" *ngIf="templateWidth >= 760">
+  <div class="arkApp_gridLayout_inactive" [style.left.px] = bgGridOffset>
+    <span *ngFor="let grid of bgGrid" [style.width.px]= grid.width class="grid"></span>
+  </div>
+  <div class="arkApp_gridLayout_active" [style.width.px]= templateWidth [style.left.px] = templateOffset>
+    <span *ngFor="let grid of templateGrid" [style.width.px]= grid.width  class="grid"></span>
+  </div>
+</div>
+<div class="guide-lines"></div>
+<ark-template-frame></ark-template-frame>
+</div>

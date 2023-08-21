@@ -1,0 +1,4 @@
+/*--Banner style--*/
+.bnr-container{height:200px; padding:0; color:#ffffff; display: table; width: 100%;}
+.bnr-txt{text-align: center;  display: table-cell; text-align: center; vertical-align: middle;}
+/*--Banner style end--*/

@@ -1,0 +1,38 @@
+<!--<form class="form-wrapper" (ngSubmit)="onSubmit(signInForm.value)" [formGroup]="signInForm">
+  <h1> &nbsp;</h1>
+  <div class="form-container">
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email" required>
+      <mat-error *ngIf="!signInForm.controls['email'].valid && (signInForm.controls['email'].touched || signInForm.controls['email'].dirty) || !isFormValid">{{ getErrorEmail() }}</mat-error>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" class="btn-lg">Sign In</button>
+  <p>Don't have an account? <a [routerLink]="['/signup']">Create it</a></p>
+</form>-->
+
+<div class="ark-login-wrapper">
+  <div class="ark-login">
+    <div class="ark-o-logo"><span class="ark-o-icon"></span></div>
+    <div class="ark-log-sec">
+      <div class="ark-app-logo"><img src="./assets/images/logo.png" alt="logo" /></div>
+      <div class="ark-log-header">
+        <h3>Login (Development)</h3>
+        <!--<h4>Provide a Clear Information</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. </p>-->
+
+        <form (ngSubmit)="onSubmit(signInForm.value)" [formGroup]="signInForm">
+          <h4>Email</h4>
+          <input type="text" matInput placeholder="Example@oracle.com" formControlName="email" class="ark-log-input"
+            required>
+          <mat-error
+            *ngIf="!signInForm.controls['email'].valid && (signInForm.controls['email'].touched || signInForm.controls['email'].dirty) || !isFormValid"
+            class="validation"><em>{{ getErrorEmail() }}</em></mat-error>
+          <div class="ark-log-btn-sec">
+              <button class="btn-txt ark-log-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

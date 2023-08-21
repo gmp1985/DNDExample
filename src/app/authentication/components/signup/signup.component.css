@@ -1,0 +1,11 @@
+.form-container, .form-container .mat-form-field{width:100%;}
+.form-container .mat-form-field{font-size: 1.3rem;}
+.form-wrapper h1, .form-wrapper p{text-align: center;margin: 10px;}
+.form-wrapper p{margin: 30px;}
+.btn-lg{width: 100%;height: 50px;font-size: 20px;}
+
+@media only screen and (max-width : 480px) {
+  .btn-lg{width: 100%; height: 35px; font-size: 16px;}
+  .form-wrapper h1, .form-wrapper p{text-align: center; margin: 15px;}
+  .form-container .mat-form-field{font-size: 1rem;}
+}

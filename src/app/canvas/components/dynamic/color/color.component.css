@@ -1,0 +1,49 @@
+* {
+    --picker-height: 10px;
+    --marker-border-width: 2px;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+}
+
+.gradient-container {
+    position: relative;
+    width: 100%;
+}
+
+.wheel-container {    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.code-container {
+    text-align: center;
+    padding: 4px;
+    padding-top:8px;
+}
+
+.value-picker {
+    margin: 0 var(--marker-border-width);
+    height: var(--picker-height);
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.value-marker {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    width: calc(var(--picker-height) / 2);
+    height: var(--picker-height);
+    position: absolute;
+    top: calc(var(--marker-border-width) * 0);
+    pointer-events: none;
+}
+
+input {
+    width: 110px;
+    margin-right: 5px;    
+    float: left;
+    color: #333;
+}

@@ -1,0 +1,9 @@
+<div id="boxIcon" class="boxIconDIV material-icons">more_horiz</div>
+<div id="boxMenu">
+  <div class="arkAppArrowRight" id="menuIcon"></div>
+  <div class="arkAppBoxMenuOpt" id="menuoptions">
+    <ul *ngFor="let boxMenu of this.boxmenuList['QuickMenu']['source']">
+      <li><a href="javascript:void(0)" (click)="triggerAction(boxMenu.action)">{{boxMenu.values}}</a></li>
+    </ul>    
+  </div>
+</div>

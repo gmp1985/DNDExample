@@ -1,0 +1,6 @@
+/*--footer--*/
+.ftr-sec-abs{width:100%; bottom: 0; position: absolute;} 
+.ftr-sec-rel{width:100%; bottom: 0; position: relative;}
+.ftr-sec-abs .ftr-container, .ftr-sec-rel .ftr-container{display: table; height: 60px; text-align: center; margin: auto;}
+.ftr-sec-abs .ftr-txt, .ftr-sec-rel .ftr-txt{text-align: center;  display: table-cell; text-align: center; vertical-align: middle; color:#ffffff; margin: 0; padding: 0;}
+/*--footer end--*/

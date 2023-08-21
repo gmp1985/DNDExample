@@ -1,0 +1,288 @@
+/*** Quick Menu Starts
+
+.editor-quick-menu{background-color: #48525b; padding:10px 20px 2px 20px; width: 225px; border-radius: 5px; float: left; position: absolute; top: -15px;}
+.editor-quick-menu ul{text-decoration: none; list-style: none;  color:#ffffff; margin: 0; padding: 0; font-family: arial; font-size:14px; float: left;}
+.editor-quick-menu ul li{display: inline-block; padding-right: 10px;}
+.editor-quick-menu ul li:last-child{padding-right: 0px;}
+.editor-quick-menu ul li a{color:#ffffff;}
+.editor-quick-menu ul li a:hover, .ative{color:#00aeef;}
+.dotted-right{float: right;}
+.dotted-right .material-icons {color:#ffffff; cursor: pointer; padding: 0; margin: 0; line-height: 18px;}
+**/
+.editor-quick-menu{background-color: #48525b; padding:6px 15px 6px 15px; width: auto; border-radius: 5px; float: left; margin: 0; position: absolute; top: -25px; z-index: 1;  transition: background-color .5s ease-out; transition: background-color .5s ease-out;
+    -webkit-box-shadow: 0px 3px 29px -4px rgba(0,0,0,0.51);
+    box-shadow: 0px 3px 29px -4px rgba(0,0,0,0.51);
+    animation-name: quickmenu-animation;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;}
+@-moz-document url-prefix() {.editor-quick-menu{padding-top:5px;}}
+.editor-quick-menu ul{text-decoration: none; list-style: none;  color:#ffffff; margin: 0; padding: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size:14px; float: left;} 
+.editor-quick-menu ul li{display: inline-block; padding: 0px 1px 0px 1px;}
+.editor-quick-menu ul li a{display: inline-block; color:#ffffff; padding: 5px 0px; margin:0; width: 28px; height:28px; text-align:center; transition: background .25s; cursor: pointer; font-size: 24px;}
+.editor-quick-menu ul li a:hover{background-color:#5b6670; border-radius: 3px;}
+.editor-quick-menu ul li a.activeIcon{color:#00aeef; background-color:#5b6670; border-radius: 3px;}	
+.dotted-right{float: right; padding-left: 25px;}
+.dotted-right .material-icons {color:#ffffff; cursor: pointer; padding: 4px 0 0 0;}
+.editor-quick-menu .material-icons{ font-size:20px;}
+
+/* Dropdown */
+.selectdiv{float:left; margin-left: 10px;}
+@-moz-document url-prefix() {.selectdiv .dd-button:after{padding-bottom: 3px !important;}}
+.selectdiv .dd-button:after {font: normal normal normal 18px/1 Material Icons; content: "\e313"; color: #ffffff; right: 0px; top:0px; padding: 2px 2px 2px 2px; position: absolute; pointer-events: none; background-color: #8b98a4; border-bottom-right-radius:5px; border-top-right-radius:5px; outline: none;}		
+.selectdiv .dd-button {display: inline-block; border-radius: 5px; padding: 3px 10px 3px 10px; background-color: #5b6670; cursor: pointer; white-space: nowrap; width:60px; height: 20px; color:#ffffff; vertical-align: bottom; display: table-cell; font-size:14px; text-align: left;}
+.selectdiv .dd-menu {position: absolute; padding: 5px 0 5px 0; margin: -4px 0 0 0; background-color: #5b6670; list-style-type: none; color:#ffffff; font-size:14px; border-bottom-left-radius:5px; border-bottom-right-radius:5px; z-index: -1; width: 60px;}
+@-moz-document url-prefix() {.selectdiv .dd-button{width:40px;}}
+
+.dropdown {display: inline-block;  position: relative; margin: 0; top: 4px;}
+.dd-input {display: none;}
+.dd-input + .dd-menu {display: none;} 
+.dd-input:checked + .dd-menu { display: block; } 
+.dd-menu li {padding: 3px 10px !important; cursor: pointer; width: 100%; text-align: left;}
+.dd-menu li:hover {background-color: #00aeef; }
+.dd-menu li a {display: block; padding: 10px 0px;}
+/* Dropdown end */
+	
+.editor-quick-menu ul li .arw:after {
+ position: absolute; left: 60.5%; top: -7px; width: 0; height: 0; content: ''; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #48525b; right:0px;}
+	
+.link-popup{background-color: #48525b; padding:7px 15px 7px 15px; width: 300px; border-radius: 5px; float: left; left:50px; position: absolute;}
+.link-popup .link-inputBox{float:left;}
+.link-popup .link-sel{position: absolute; right: 10px; z-index: 1; top:4px;}
+@-moz-document url-prefix() {.link-sel .dd-button:after{padding-bottom: 3px !important;}}
+.link-sel .dd-button:after {font: normal normal normal 18px/1 Material Icons; content: "\e313"; color: #ffffff; right: 0px; top:0px; padding: 2px 2px 2px 2px; position: absolute; pointer-events: none; background-color: #8b98a4; border-bottom-right-radius:5px; border-top-right-radius:5px; outline: none;}		
+.link-sel .dd-button {display: inline-block; border-radius: 5px; padding: 3px 10px 3px 10px; background-color: #5b6670; cursor: pointer; white-space: nowrap; width:85px; height: 20px; color:#ffffff; vertical-align: bottom; display: table-cell; font-size:14px}
+
+.link-sel .dd-menu {position: absolute; padding: 5px 0 5px 0; margin: -4px 0 0 0; background-color: #5b6670; list-style-type: none; color:#ffffff; font-size:14px; border-bottom-left-radius:5px; border-bottom-right-radius:5px; z-index: -1; width: 84px;}	
+.link-inputBox .txt-box{padding: 3px 28px 3px 5px; font-size: 14px; width: 180px; outline: none; border:0;}
+.link-inputBox #clear {cursor: pointer; position: relative; right:21px; top:2px; float:right;}
+.link-inputBox #clear .bg {background-color: #54caf5; width: 15px; height: 15px; border-radius: 50%; }
+.link-inputBox #clear .f-icon{ color:#ffffff; font-size: 9px; padding-top: 3px; text-align: center; cursor: pointer; user-select: none; }
+
+@-moz-document url-prefix() {.link-inputBox #clear {top:0px;}}
+/*Link popup*/
+/*** Quick Menu Ends **/
+
+.Ark-editor {
+	width: 300px;
+	position: absolute;
+	right: 100px;
+	bottom: 40px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;	
+}
+
+.Ark-editor .settings-head {
+	height: 60px;
+	background-color: #404d5a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	padding: 20px;
+	float: left
+}
+
+.Ark-editor .settings-btm {
+	height: 30px;
+	background-color: #465866;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 100%;
+	float: left
+}
+
+.Ark-editor .settings-head .title {
+	float: left;
+	color: #fff;
+	font-size: 18px
+}
+
+.Ark-editor .settings-head .close-btn {
+	float: right
+}
+
+.close-btn .bg {
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%
+}
+
+.close-btn .f-icon {
+	color: #48535c;
+	font-size: 16px;
+	padding-top: 2px;
+	text-align: center;
+	cursor: pointer
+}
+
+.Ark-editor .sb {
+	height: 450px;
+	padding: 0;
+	width: 100%;
+	overflow-y: scroll
+}
+
+.Ark-editor .sb::-webkit-scrollbar {
+	width: 9px;
+	height: 10px
+}
+
+.Ark-editor .sb::-webkit-scrollbar-track-piece {
+	background-color: #636363
+}
+
+.Ark-editor .sb::-webkit-scrollbar-thumb:vertical {
+	height: 200px;
+	background-color: #959595
+}
+
+.Ark-editor .sec-bg {
+	background: linear-gradient(to bottom, #455462 0, #404e5a 100%);
+	width: 100%;
+	padding: 20px;
+	float: left;
+	color: #fff
+}
+
+.Ark-editor .sec-bg .title {
+	font-size: 14px;
+	float: left;
+	padding-bottom: 15px
+}
+
+.Ark-editor .sec-bg .f-comp,
+.Ark-editor .sec-bg .txt-comp {
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+
+.Ark-editor .sec-bg .txt-comp i {
+	font-size: 24px;
+	cursor: pointer;	
+}
+.Ark-editor .sec-bg .txt-comp .material-icons {
+	font-size: 20px;
+	margin-top: 5px
+}
+
+.Ark-editor .sec-bg .input-comp {
+	width: 100%;
+	position: relative
+}
+
+.input-comp .txt-box {
+	background-color: transparent;
+	border: 1px solid #9aa2a9;
+	color: #7c868f;
+	padding: 5px 28px 5px 5px;
+	font-size: 14px;
+	width: 100%;
+	outline: 0
+}
+
+.Ark-editor .sec-bg .txt-comp ul {
+	float: left;
+	margin: 0;
+	padding: 0
+}
+
+.Ark-editor .sec-bg .txt-comp ul li {
+	display: inline-block;
+	padding: 0 1px;
+	margin: 0
+}
+
+.Ark-editor .sec-bg .txt-comp ul li a {
+	display: inline-block;
+	color: #fff;
+	transition: background .25s;
+	width: 28px;
+	height: 28px;
+	text-align: center
+}
+
+.Ark-editor .sec-bg .txt-comp ul li a:hover {
+	background-color: #5b6670;
+	border-radius: 3px;
+	top: 0;
+	left: 0
+}
+
+.Ark-editor .sec-bg .txt-comp ul li a.active {
+	color: #00aeef;
+	background-color: #5b6670;
+	border-radius: 3px
+}
+
+#clear {
+	cursor: pointer;
+	position: relative;
+	right: 5px;
+	top: -25px;
+	float: right
+}
+
+#clear .bg {
+	background-color: #54caf5;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%
+}
+
+#clear .f-icon {
+	color: #fff;
+	font-size: 9px;
+	padding-top: 3px;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.settingIcn{
+	font-size: 24px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.inpCls{
+	background-color: #404E5B;
+    border: #ffffff solid 1px;
+    padding: 2px;
+	width: 100%;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.inpSec{
+	padding: 10px 10px 25px 0px;
+	width: 100%;
+}
+
+@keyframes quickmenu-animation {
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
+  }
+  50%{
+    opacity: 1;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  70%{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+

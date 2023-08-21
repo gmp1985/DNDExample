@@ -1,0 +1,23 @@
+<!-- side bar start -->
+<div class="ark-app-left-bar-sec" id="leftBar">
+    <ul>
+        <li class="ark-app-left-bar-btn"><span><i class="mt-icon-10 fa"></i></span></li>
+        <li class="ark-app-left-bar-btn">
+            <div (click)="_createElementBox()"><i class="mt-icon-14 fa"></i><span id="toActive" #toActive [ngClass]="{'active': elementsBtn}"></span></div>
+        </li>
+        <li class="ark-app-left-bar-btn">
+            <div #tempSettings (click)="_showCanvasSettings()"><i class="mt-icon-12 fa"></i><span id="toActive" #toActive></span></div>
+        </li>
+    </ul>
+</div>
+
+<div #elementListBox class="elementListBox"></div>
+
+
+<div class="ark-app-left-bar-bottom">
+    <ul>
+        <li class="ark-app-left-bar-btn"><span><i class="mt-icon-18 fa"></i></span>
+        </li>
+    </ul>
+</div>
+<!-- side bar end -->

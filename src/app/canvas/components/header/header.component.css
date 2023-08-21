@@ -1,0 +1,35 @@
+/*---Header style start---*/
+.ark-app-hdr{ width: 100%; background-color: #48525b; height: 60px; padding: 0px 1.5%; position: fixed; z-index: 1000; top:0;}
+.ark-app-logo{float:left;}
+.ark-app-theme-title{margin:0 auto; text-align: center; width: 500px; color:#c9cacb; vertical-align: middle; padding-top: 30px; font-size: 14px;}
+
+/*---Device preview style start---*/
+.ark-app-preview-icon-sec .icon-space{vertical-align: text-bottom;bottom: -9px;position: relative;display: inline-block; }
+.ark-app-preview-icon-sec .mt-icon-24, .ark-app-preview-icon-sec .mt-icon-23,.ark-app-preview-icon-sec .mt-icon-22{transition: all 0.5s ease;}
+.ark-app-preview-icon-sec .mt-icon-24:hover, .ark-app-preview-icon-sec .mt-icon-23:hover,.ark-app-preview-icon-sec .mt-icon-22:hover{color:#ffffff; cursor: pointer;}
+.ark-app-preview-icon-sec{ float:right; margin-top: 20px; margin-right: 80px; position: absolute; top: 0; right: 0; display: inline-block;}
+.ark-app-dsk-view{float:left; margin-right:20px; width: 26px; height: 21px; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none; -o-user-select: none; user-select: none;}
+.ark-app-dsk-view .mt-icon-24{color: rgba(190,190,190,0.7); font-size: 28px; vertical-align: text-bottom; cursor: pointer;}
+.ark-app-tab-view{float:left; margin-right:16px; width: 14px; height: 13px;}
+.ark-app-tab-view .mt-icon-23{color: rgba(190,190,190,0.7); font-size: 24px; vertical-align: text-bottom; bottom: -5px; cursor: pointer;}
+.ark-app-mob-view{float:left; width: 6px; height: 11px;}
+.ark-app-mob-view .mt-icon-22{color: rgba(190,190,190,0.7); font-size: 20px; vertical-align: text-bottom; cursor: pointer;}
+/*---Device preview style end---*/
+
+/*---Header dotted dropdown start---*/
+.ark-app-dropbtn-sec{float: right;}
+.ark-app-dropbtn-sec .icons li {background: none repeat scroll 0 0 #fff; height: 4px; width: 4px; line-height: 0; list-style: none outside none; margin-right: 15px; margin-top: 3px; vertical-align: top; border-radius:50%; pointer-events: none;}
+.ark-app-dropbtn-sec .btn-right {right: 1.3em; top: 0.9em; padding: 5px 0px 8px 14px; color:#ffffff !important;}
+.ark-app-dropbtn {position: fixed; font-size: 16px; border: none; cursor: pointer;  transition-duration: 0.5s;}
+.ark-app-dropbtn:hover, .dropActive{ background-color: #c9679b; border-radius: 5px;}
+.ark-app-dropdown-cnt {display: none; position: relative; margin-top: 13px; background-color: #00aeef; min-width: 145px; right: -.9em; border-radius:8px; padding: 13px 20px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.ark-app-dropdown-cnt ul li a {color:#ffffff; text-decoration: none; font-size: 14px; line-height: 30px; }
+.ark-app-dropdown-cnt li a:hover {color: #48525b; transition: all .4s ease;}
+.ark-app-dropdown-cnt ul{list-style-type: none; margin: 0; padding: 0;}
+.ark-app-show{display:block;}
+.ark-app-dropdown-cnt :after {
+ position: absolute; left: 64%; top: -10px; width: 0; height: 0; content: ''; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 20px solid #00aeef; right:0px;}
+/*---Header dotted dropdown end---*/
+@-moz-document url-prefix() {
+    .ark-app-preview-icon-sec .icon-space{vertical-align: text-bottom;bottom: -7px;position: relative;display: inline-block; }
+}

@@ -1,0 +1,42 @@
+<div class="ark-modal-wrapper">
+  <div class="ark-modal-sec">
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <h3 class="ark-fs22">Design new theme</h3>
+      <h4 class="ark-fs16">Provide a Clear Information</h4>
+      <p class="ark-fs14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+      <h4 class="ark-fs16">1. Select a width for your template </h4>
+      <div class="sel-box-wrapper">
+        <span class="select-wrapper">
+          <select name="tempWidthSel" class="custom-select Select" (change)="changeTempWidth($event)" formControlName="tempWidthSel">          
+            <option value="">Select Width</option>
+            <option value="1600">1600px (recommended)</option>            
+            <option value="1200">1200px</option>            
+            <option value="960">960px</option>
+            <option value="750">750px</option>
+            <option value="614">614px</option>
+          </select>
+          <span class="holder">{{tempWidthSelTxt}}</span>
+        </span>
+      </div>
+      <h4 class="ark-fs16">2. Provide short (to display on thumbnail) and full theme name</h4>
+      <div class="ark-box-wrapper">
+        <div class="ark-input-left">
+          <input type="text" placeholder="ARK-Prototype" value="ARK-Prototype" class="ark-modal-input" name="tempSName" formControlName="tempSName"/>
+        </div>
+        <div class="ark-input-right">
+          <input type="text" class="ark-modal-input" name="tempFName" formControlName="tempFName"/>
+        </div>
+      </div>
+      <p class="ark-fs14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+      <div class="modal-btn-sec">
+        <div class="ark-btn-warpper ark-mr20" >
+          <div class="ark-btn"> <a (click)="dialogRef.close()"><span class="btn-txt">Cancel</span></a> </div>
+        </div>
+        <div class="ark-btn-warpper">          
+            <!--<a href="" target="self"><span class="btn-txt">Continue</span></a>-->
+            <button type="submit" class="ark-btn">Submit</button>           
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+/*--breadcrumb style--*/
+.brd-crumb-sec{display: table; height: 48px; margin: 0; padding: 0; position: absolute; top: 0px;}
+.brd-crumb-sec .ark-logo{float:left; height: 48px;}
+.brd-crumb-sec .ark-logo img{border:0; outline: none; margin-right: 10px;}
+.brd-crumb-sec .bcm {display: table-cell; text-align: center; vertical-align: middle;}
+.brd-crumb-sec .bcm ul {padding: 0; list-style: none; display: inline-block; margin: 0;}
+.brd-crumb-sec .bcm li {display: inline; font-size: 14px;}
+.brd-crumb-sec .bcm li+li:before {padding: 0 4px; color: #cccccc; content: "/\00a0";}
+.brd-crumb-sec .bcm li a {color: #cccccc; text-decoration: none; transition: 0.4s;}
+.brd-crumb-sec .bcm ul li a:hover {color: #ffffff; text-decoration: none; }
+/*--breadcrumb style end--*/

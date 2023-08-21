@@ -1,0 +1,326 @@
+{
+  "heading": {
+    "QuickMenu": [{
+        "iconOrder": 20,
+        "icon": "italics",
+        "iconFont": "",
+        "iconClass": "mt-icon-05",
+        "iconType": "button",
+        "iconGroup": "text_option",
+        "command": "italic",
+        "source": [{
+          "class": "oa-txt-italic"
+        }]
+      },
+      {
+        "iconOrder": 30,
+        "icon": "underline",
+        "iconFont": "",
+        "iconClass": "mt-icon-04",
+        "iconType": "button",
+        "iconGroup": "text_option",
+        "command": "underline",
+        "source": [{
+          "class": "oa-txt-underline"
+        }]
+      },
+      {
+        "iconOrder": 40,
+        "icon": "text align left",
+        "iconFont": "",
+        "iconClass": "mt-icon-21",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyLeft",
+        "source": [{
+          "class": "oa-txt-left"
+        }]
+      },
+      {
+        "iconOrder": 50,
+        "icon": "text align center",
+        "iconFont": "",
+        "iconClass": "mt-icon-20",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyCenter",
+        "source": [{
+          "class": "oa-txt-center"
+        }]
+      },
+      {
+        "iconOrder": 60,
+        "icon": "text align right",
+        "iconFont": "",
+        "iconClass": "mt-icon-19",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyRight",
+        "source": [{
+          "class": "oa-txt-right"
+        }]
+      },
+      {
+        "iconOrder": 70,
+        "icon": "heading",
+        "iconFont": "",
+        "iconClass": "",
+        "iconType": "select",
+        "iconGroup": "heading_option",
+        "command": "formatBlock",
+        "source": [{
+            "name": "H1",
+            "value": "h1"
+          },
+          {
+            "name": "H2",
+            "value": "h2"
+          },
+          {
+            "name": "H3",
+            "value": "h3"
+          },
+          {
+            "name": "H4",
+            "value": "h4"
+          },
+          {
+            "name": "H5",
+            "value": "h5"
+          },
+          {
+            "name": "H6",
+            "value": "h6"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "QuickMenu": [{
+        "iconOrder": 10,
+        "icon": "bold",
+        "iconFont": "",
+        "iconClass": "mt-icon-03",
+        "iconType": "button",
+        "iconGroup": "text_option",
+        "command": "bold",
+        "source": [{
+          "class": "oa-txt-bold"
+        }]
+      },
+      {
+        "iconOrder": 20,
+        "icon": "italics",
+        "iconFont": "",
+        "iconClass": "mt-icon-05",
+        "iconType": "button",
+        "iconGroup": "text_option",
+        "command": "italic",
+        "source": [{
+          "class": "oa-txt-italic"
+        }]
+      },
+      {
+        "iconOrder": 30,
+        "icon": "underline",
+        "iconFont": "",
+        "iconClass": "mt-icon-04",
+        "iconType": "button",
+        "iconGroup": "text_option",
+        "command": "underline",
+        "source": [{
+          "class": "oa-txt-underline"
+        }]
+      },
+      {
+        "iconOrder": 40,
+        "icon": "text align left",
+        "iconFont": "",
+        "iconClass": "mt-icon-21",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyLeft",
+        "source": [{
+          "class": "oa-txt-left"
+        }]
+      },
+      {
+        "iconOrder": 50,
+        "icon": "text align center",
+        "iconFont": "",
+        "iconClass": "mt-icon-20",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyCenter",
+        "source": [{
+          "class": "oa-txt-center"
+        }]
+      },
+      {
+        "iconOrder": 60,
+        "icon": "text align right",
+        "iconFont": "",
+        "iconClass": "mt-icon-19",
+        "iconType": "button",
+        "iconGroup": "text_align",
+        "command": "justifyRight",
+        "source": [{
+          "class": "oa-txt-right"
+        }]
+      },
+      {
+        "iconOrder": 70,
+        "icon": "hyperlink",
+        "iconFont": "",
+        "iconClass": "mt-icon-06",
+        "iconType": "hyperlink",
+        "iconGroup": "hyperlink_option",
+        "command": "createLink",
+        "source": [
+
+        ]
+      }
+    ]
+  },
+  "image": {
+    "QuickMenu": [{
+        "iconOrder": 10,
+        "icon": "left",
+        "iconFont": "mt-icon-36",
+        "iconClass": "mt-icon-36",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": [{
+            "desktop": "oa-cnt-left",
+            "tablet": "oa-sm-cnt-left",
+            "mobile": "oa-xs-cnt-left"
+          }]
+        }],
+        "isbrowse": false
+      },
+      {
+        "iconOrder": 20,
+        "icon": "right",
+        "iconFont": "mt-icon-38",
+        "iconClass": "mt-icon-38",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": [{
+            "desktop": "oa-cnt-right",
+            "tablet": "oa-sm-cnt-right",
+            "mobile": "oa-xs-cnt-right"
+          }]
+        }],
+        "isbrowse": false
+      },
+      {
+        "iconOrder": 30,
+        "icon": "top",
+        "iconFont": "mt-icon-37",
+        "iconClass": "mt-icon-37",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": [{
+            "desktop": "oa-cnt-top",
+            "tablet": "oa-sm-cnt-top",
+            "mobile": "oa-xs-cnt-top"
+          }]
+        }],
+        "isbrowse": false
+      },
+      {
+        "iconOrder": 40,
+        "icon": "bottom",
+        "iconFont": "mt-icon-39",
+        "iconClass": "mt-icon-39",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": [{
+            "desktop": "oa-cnt-bottom",
+            "tablet": "oa-sm-cnt-bottom",
+            "mobile": "oa-xs-cnt-bottom"
+          }]
+        }],
+        "isbrowse": false
+      },
+      {
+        "iconOrder": 41,
+        "icon": "center",
+        "iconFont": "mt-icon-40",
+        "iconClass": "mt-icon-40",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": [{
+            "desktop": "oa-cnt-center",
+            "tablet": "oa-sm-cnt-center",
+            "mobile": "oa-xs-cnt-center"
+          }]
+        }],
+        "isbrowse": false
+      },
+      {
+        "iconOrder": 42,
+        "icon": "browse",
+        "iconFont": "mt-icon-15",
+        "iconClass": "mt-icon-15",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "isbrowse": true
+      }
+    ],
+    "AdvancedMenu":[{
+      "order": 10,
+      "name": "Width",
+      "type": "input",
+      "typeClass": "half"
+    },
+    {
+      "order": 10,
+      "name": "Height",
+      "type": "input",
+      "typeClass": "half"
+    }]
+  },
+  "button": {
+    "QuickMenu": [{
+        "iconOrder": 40,
+        "icon": "content align left",
+        "iconFont": "",
+        "iconClass": "mt-icon-21",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": "oa-txt-left"
+        }]
+      },
+      {
+        "iconOrder": 50,
+        "icon": "content align center",
+        "iconFont": "",
+        "iconClass": "mt-icon-20",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": "oa-txt-center"
+        }]
+      },
+      {
+        "iconOrder": 60,
+        "icon": "content align right",
+        "iconFont": "",
+        "iconClass": "mt-icon-19",
+        "iconType": "button",
+        "iconGroup": "content_align",
+        "source": [{
+          "class": "oa-txt-right"
+        }]
+      }      
+    ]
+  }
+}

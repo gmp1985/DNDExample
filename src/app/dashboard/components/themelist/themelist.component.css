@@ -1,0 +1,15 @@
+.theme-bdr{border: 1px solid #d7d7d7; background-color:#f4f6f8;}
+.theme-tmb-label {position: relative;  bottom: 0;  width: 100%;  transition: .5s ease; opacity:1;  padding: 15px 20px; top:-53px}
+.theme-tmb-label .dot-icon{position: absolute;right:15px; top: 5px; color:#ffffff; cursor: pointer;}
+.theme-tmb-label p{color: #fff;  text-align: center; }
+
+/*---Tooltip start---*/
+.tmb-popup-btn { border: none; cursor: pointer;  }
+.tmb-dropdown-cnt {display: none; position: relative;  background-color: #48525b;  border-radius:5px; padding: 13px 15px; width:110px; right: -18%; float: right; top: -72px; z-index: 1;}
+.tmb-dropdown-cnt ul li a {color:#ffffff; text-decoration: none; font-size: 14px; line-height: 25px; }
+.tmb-dropdown-cnt li a:hover, a.active {color: #858789; transition: all .3s ease;}
+.tmb-dropdown-cnt ul{list-style-type: none; margin: 0; padding: 0;}
+.ark-app-show{display:block;}
+.tmb-dropdown-cnt :after {
+ position: absolute; left: 15%; top: -7px; width: 0; height: 0; content: ''; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #48525b; right:0px; z-index: 1000;}
+/*---Tooltip end---*/

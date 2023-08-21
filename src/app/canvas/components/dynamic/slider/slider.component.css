@@ -1,0 +1,47 @@
+* {
+    --handle-size: 24px;
+}
+
+label {
+    color: #ffffff;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    margin-top: 8px;
+    width: 100%;
+    height: var(--handle-size);
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.slider-container{
+    font-size: 14px;    
+}
+
+.slider-line {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    background-color: #ededed;
+}
+
+.handle {
+    background-color: #00aeef;
+    color: #ffffff;
+    border-radius: 50%;
+    width: var(--handle-size);
+    height: var(--handle-size);
+    line-height: var(--handle-size);
+    text-align: center;
+    font-size: 75%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition: left 0.2s ease-out;
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+}

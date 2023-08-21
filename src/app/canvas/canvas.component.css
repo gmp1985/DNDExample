@@ -1,0 +1,15 @@
+.rulerOverlay{position: absolute; top: 0; left: 0; bottom: 0; width:100%; height: 100%;}
+.arkApp_gridcoloumn span{float: left; margin: 0; padding: 0 15px; width:100%; list-style: none;  height: 100vh; position: fixed; background: #2196f366; border-right: 15px solid #ffffff; border-left: 15px solid #ffffff;}
+.arkApp_gridcoloumn span.active {background: #e91e6375; }
+
+.arkApp_gridLayout {    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed; z-index: -1;}
+
+
+.arkApp_gridLayout .arkApp_gridLayout_inactive{width: 110%; position: absolute; z-index: -1;}
+.arkApp_gridLayout .arkApp_gridLayout_inactive span.grid{ float: left; height: 100vh; border-right: 15px solid #ffffff; border-left: 15px solid #ffffff; background: #fafafa;}
+.arkApp_gridLayout .arkApp_gridLayout_active{position: absolute;}
+.arkApp_gridLayout .arkApp_gridLayout_active span.grid{ float: left; height: 100vh; border-right: 15px solid #ffffff; border-left: 15px solid #ffffff; background: #fff2f9;}

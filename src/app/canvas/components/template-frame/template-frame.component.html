@@ -1,0 +1,12 @@
+<div class="mainWrapper">
+  <div class="containerWrapper">
+    <div class="iframeWrapper" #templateFrameWrapper [style.height.px] = templateHeight>
+      <div class="ark-quick-menu"></div>
+      <div class="ark-advance-menu"></div>
+      <!--<iframe scrolling="no" class="iframe" [attr.src]="url ? url : null" allowfullscreen #vc></iframe>-->
+      <iframe scrolling="no" class="iframe" #templateFrame [style.height.px] = IframeHeight [style.width.px] = IframeWidth (load)="onLoad()"></iframe>
+
+      <div #vframe id="templateWrapper" style="display: none;"></div>
+    </div>
+  </div>
+</div>

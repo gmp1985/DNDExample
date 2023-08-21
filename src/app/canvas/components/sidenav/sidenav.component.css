@@ -1,0 +1,19 @@
+/*---SideBar style start---*/
+.ark-app-left-bar-sec{top:110px; left:30px;  position: fixed;}
+.ark-app-left-bar-sec ul{list-style: none; margin: 0; padding: 0;}
+.ark-app-left-bar-btn{cursor: pointer; background-color: #48525b; border-radius: 100px; width: 37px; height: 37px; margin-bottom: 12px; text-align:center; color:#ffffff; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: -moz-none; -o-user-select: none; user-select: none;}
+.ark-app-left-bar-btn .active { display: block;  width: 55px; height:95px; background: url(/assets/svg/sb-btn.svg); position: relative; z-index: -1; top:-62px; left:-7px;	display: inline-block; background-position: 0px 0px; fill:#29abe2;}
+.ark-app-left-bar-btn .fa {padding-top: 7px; font-size: 24px; display: inline-block; }
+.ark-app-left-bar-bottom{bottom:0; position: fixed; left:-10px; padding-bottom: 30px;}
+/*---SideBar style end---*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .ark-app-left-bar-btn .fa {padding-top: 9px; font-size: 24px; display: inline-block; }
+    .ark-app-left-bar-btn .active{top:-63px;}
+    .ark-app-left-bar-sec{z-index: 1000;}
+    }
+    .showSettings{
+        display: block !important;
+    }
+    .mat-dialog-container{
+        padding:5px !important;
+    }

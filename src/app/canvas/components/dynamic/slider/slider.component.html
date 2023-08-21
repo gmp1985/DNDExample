@@ -1,0 +1,14 @@
+<div class="slider-container">
+  <label>{{config.label}}</label>
+  <div class="slider"
+       (mousedown)="jumpPosition($event.offsetX); isHandleDragging = true; $event.preventDefault();"
+       (mousemove)="onWheelDrag($event.offsetX)"
+       (window:mouseup)="isHandleDragging=false;"
+       #slider>
+      <div class="slider-line"></div>
+      <div class="handle"
+           #handle>
+          {{value| number:'1.0-0'}}
+      </div>
+  </div>
+</div>

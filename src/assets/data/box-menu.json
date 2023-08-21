@@ -1,0 +1,38 @@
+{
+    "container": {
+        "QuickMenu": [{
+            "menuOrder": 10,
+            "menuName": "Add Frame",            
+            "menuClass": "",            
+            "menuGroup": "",
+            "source": [{
+                "action": "addFrame",
+                "value": ["oa-container"],
+                "data": "row"
+            }]
+            },
+            {
+            "menuOrder": 20,
+            "menuName": "Settings",            
+            "menuClass": "",            
+            "menuGroup": "",
+            "source": [{
+                "action": "settings",
+                "value": ["oa-container"],
+                "data": "row"
+            }]
+            },
+            {
+                "menuOrder": 30,
+                "menuName": "Delete Frame",            
+                "menuClass": "",            
+                "menuGroup": "",
+                "source": [{
+                    "action": "delete",
+                    "value": ["oa-container"],
+                    "data": "row"
+                }]
+            }
+        ]
+    }
+}

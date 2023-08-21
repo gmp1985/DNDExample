@@ -1,0 +1,40 @@
+<div class="ark-container-fluid">
+  <div class="ark-c-lg-10 ark-c-md-11 ark-c-sm-12  ark-c-xs-12 ark-center">
+    <div class="ark-row">
+      <div class="ark-c-lg-12 ark-c-md-12 ark-c-sm-12 ark-c-xs-12">
+        <div class="ark-row">
+          <div class="ark-c-lg-3 ark-c-md-4 ark-c-sm-4 ark-c-xs-12">
+            <div class="ark-row"><a [routerLink]="[ '/editor']">
+                <div class="ark-c-lg-12 ark-c-md-12 ark-c-sm-12 ark-c-xs-12 ark-mt30"> <img
+                    src="./assets/images/NewTheme.jpg" alt="thumbnail" border="0" class="ark-img-fluid theme-bdr" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="ark-c-lg-3 ark-c-md-4 ark-c-sm-4 ark-c-xs-12">
+            <div class="ark-row">
+              <div class="ark-c-lg-12 ark-c-md-12 ark-c-sm-12 ark-c-xs-12 ark-mt30"> <img
+                  src="./assets/images/DefaultTheme.jpg" alt="thumbnail" border="0" class="ark-img-fluid theme-bdr" />
+                <div class="theme-tmb-label ark-bgc-024 ark-fs20">
+                  <p>Oracle MCX</p>
+                  <span class="dot-icon"><i class="material-icons tmb-popup-btn"
+                      onclick="showDropdown()">more_horiz</i></span>
+                </div>
+                <div id="tmb-Dropdown" class="tmb-dropdown-cnt">
+                  <ul>
+                    <li><a href="#Masters">View/Edit</a></li>
+                    <li><a href="#save">Download</a></li>
+                    <li><a href="#save-as">Delete</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

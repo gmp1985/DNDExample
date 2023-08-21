@@ -1,0 +1,16 @@
+<div class="brd-crumb-sec">
+  <div class="ark-logo"><img src="./assets/images/logo.png" alt="Ark logo" /></div>
+  <div class="bcm">
+    <!-- <ul>
+      <li><a [routerLink]="[ '/home']">Home</a></li>
+      <li>My Themes</li>
+    </ul> -->
+
+    <ul>
+      <li *ngFor="let item of bcLoadedData">
+        <a [routerLink]="[item.url]" *ngIf="item.url !== ''">{{item.text}}</a>
+        <span *ngIf="item.url === ''">{{item.text}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="ark-Ruler" [style.background-position-x.px]= rulerOffset arkRuler>
+    <div class="ark-Ruler-Measure" [style.left.px]= rulerOffset>
+      <span *ngFor="let measure of measures">{{measure}}</span>
+    </div>
+    <span class="workareaborder" [style.left.px] = workareaborderLeft></span>
+    <span class="workareaborder" [style.left.px] = workareaborderRight></span>
+    
+</div>
